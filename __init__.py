@@ -1,2 +1,2 @@
-# Qiskit → OriginIR Transpiler
-# Translates IBM Qiskit circuits to OriginQ's OriginIR format
+# Quantum Bridge Transpiler
+# Translates IBM Qiskit circuits to hardware-native IR

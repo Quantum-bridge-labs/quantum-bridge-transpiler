@@ -67,18 +67,6 @@ measure q[2] -> c[2];
 print(transpile_file(qasm))
 ```
 
-## API Service
-
-Don't want to self-host? Use our managed API:
-
-```bash
-curl -X POST https://transpiler.gpupulse.dev/api/transpile \
-  -H "Content-Type: application/json" \
-  -d '{"qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[2];\ncreg c[2];\nh q[0];\ncx q[0],q[1];\nmeasure q[0] -> c[0];\nmeasure q[1] -> c[1];"}'
-```
-
-**Live demo with visual circuit builder:** [transpiler.gpupulse.dev](https://transpiler.gpupulse.dev)
-
 ## Tests
 
 ```bash
@@ -92,7 +80,3 @@ Qiskit is the global standard for writing quantum circuits. But not all quantum 
 ## License
 
 MIT
-
----
-
-Built by [GPUPulse](https://gpupulse.dev)

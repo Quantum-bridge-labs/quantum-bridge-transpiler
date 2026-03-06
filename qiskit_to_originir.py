@@ -1,10 +1,8 @@
 """
-Qiskit → OriginIR Transpiler
-==============================
-Translates IBM Qiskit quantum circuits into OriginQ's OriginIR format,
-enabling Qiskit users to run circuits on OriginQ hardware (Wukong etc).
-
-OriginIR spec: https://originqc.com.cn/en/originIR.html
+Quantum Bridge Transpiler
+===========================
+Translates IBM Qiskit quantum circuits into hardware-native IR,
+enabling Qiskit users to run circuits on alternative quantum backends.
 
 Supported gates:
   Single-qubit: H, X, Y, Z, S, T, Rx, Ry, Rz, U1, U2, U3, I
@@ -14,8 +12,8 @@ Supported gates:
   Barrier: barrier → BARRIER
 
 Usage:
-  from transpiler.qiskit_to_originir import transpile
-  originir_code = transpile(qiskit_circuit)
+  from qiskit_to_originir import transpile
+  ir_code = transpile(qiskit_circuit)
 """
 
 import math
